@@ -1,10 +1,13 @@
 package com.test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Selenium {
 
+	static WebDriver driver= null;
+	
     public static void main(String[] args) {
     	String projectpath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectpath + "/lib/chromedriver/chromedriver");
@@ -17,7 +20,7 @@ public class Selenium {
 
 		if (bodyText.contains("Hello World!")) {
 
-			System.out.println("TEST PASSED!");
+			System.out.println(" PASSED!");
 
 		} else {
 
