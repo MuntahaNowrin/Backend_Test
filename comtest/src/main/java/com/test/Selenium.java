@@ -10,7 +10,7 @@ public class Selenium {
 	
     public static void main(String[] args) {
     	String projectpath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectpath + "/lib/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/lib/chromedriver/chromedriver");
 		driver = new ChromeDriver();
 
 		driver.get("http://localhost:8085/java-tomcat-maven-example/");
@@ -20,7 +20,7 @@ public class Selenium {
 
 		if (bodyText.contains("Hello World!")) {
 
-			System.out.println(" PASSED!");
+			System.out.println("TESTing PASSED!");
 
 		} else {
 
