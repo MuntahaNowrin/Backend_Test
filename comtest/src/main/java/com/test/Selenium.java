@@ -10,7 +10,7 @@ public class Selenium {
 	
     public static void main(String[] args) {
     	String projectpath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/lib/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/arafat/browser_driver/lib/chromedriver/chromedriver");
 		driver = new ChromeDriver();
 
 		driver.get("http://localhost:8085/java-tomcat-maven-example/");
